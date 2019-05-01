@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
@@ -26,22 +26,25 @@
   </header>
   <main>
     <section id="top">
-      <h1>Ben Rogers - Web Dev</h1>
-      <p>Fascinated with web tech since '99'.</p>
-      <!-- <img src="img/beardySmiling.JPG" alt="a smiley coder"> -->
-      <p>I'm based in Fort Worth TX, and am considering local and remote work.</p>
-      <button>Email me 📬</button>
-    </section>
-    <section id="about">
-      <h2>About me</h2>
-      <p>
-        I've been in love with web technologies ever since I styled my first markup. 
-        It was in '99 just after high school, and my interest has never waned.
-        Now, I'm bringing 20 years of customer service and critical thinking skills into this tech industry I've always admired.
-      </p>
+      <div class="top-img">
+        <img src="img/beardySmiling.JPG" alt="a smiley coder">
+      </div>
+      <div id="about-copy">
+        <h1>Ben Rogers</h1>
+        <h2>Web Developer</h2>
+        <p>Fascinated with web tech since '99'.</p>
+        <p>I'm based in Fort Worth TX, and am considering local and remote work.</p>
+        <button>Email me 📬</button>
+        <h3>About me</h3>
+        <p>
+          I've been in love with web technologies ever since I styled my first markup. 
+          It was in '99 just after high school, and my interest has never waned.
+          Now, I'm bringing 20 years of customer service and critical thinking skills into this tech industry I've always admired.
+        </p>
+      </div>
     </section>
     <section id="skills">
-      <h2>Skills</h2>
+      <h3>Skills</h3>
       <ul>
         <li class="skill">Semantic HTML and CSS, including preprocessors</li>
         <li class="skill">TDD with Javascript, TypeScript, CoffeeScript</li>
@@ -51,42 +54,44 @@
         <li class="skill">Prisma for SQL/NoSQL CRUD APIs</li>
       </ul>
     </section>
-    <section class="employment">
-      <h2 id="employment">Work History</h2>
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Location</th>
-          <th>Title</th>
-          <th>Skillset</th>
-          <th>Years</th>
-        </tr>
-        <tr>
-          <td>The Usual</td>
-          <td>Fort Worth, TX</td>
-          <td>Lead Bartender</td>
-          <td>Leadership, critical thinking, rapid prioritization</td>
-          <td>2010 - Current</td>
-        </tr>
-        <tr>
-          <td>The Roman Seasonal</td>
-          <td>Fort Worth, TX</td>
-          <td>Owner</td>
-          <td>Event Management, Wordpress Development, Marketing/Promotion</td>
-          <td>2005 - 2012</td>
-        </tr>
-        <tr>
-          <td>Ocean Alaska, Factory Trawler</td>
-          <td>Dutch Harbor, AK</td>
-          <td>Deckhand</td>
-          <td>Stamina, Endurance, Focus</td>
-          <td>2002-2004</td>
-        </tr>
-      </table>
-    </section>
-  </main>
-  <footer>
-    <address>
+    <section id="employment">
+      <h3 id="employment">Work History</h3>
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Title</th>
+            <th>Skillset</th>
+            <th>Years</th>
+          </tr>
+          <tr>
+            <td>The Usual</td>
+            <td>Fort Worth, TX</td>
+            <td>Lead Bartender</td>
+            <td>Leadership, critical thinking, rapid prioritization</td>
+            <td>2010 - Current</td>
+          </tr>
+          <tr>
+            <td>The Roman Seasonal</td>
+            <td>Fort Worth, TX</td>
+            <td>Owner</td>
+            <td>Event Management, Wordpress Development, Marketing/Promotion</td>
+            <td>2005 - 2012</td>
+          </tr>
+          <tr>
+            <td>Ocean Alaska, Factory Trawler</td>
+            <td>Dutch Harbor, AK</td>
+            <td>Deckhand</td>
+            <td>Stamina, Endurance, Focus</td>
+            <td>2002-2004</td>
+          </tr>
+        </table>
+      </div>
+      </section>
+    </main>
+    <footer>
+    <address id="contact">
       <p>
         <a href="mailto:thisbenrogers@gmail.com">thisbenrogers@gmail.com</a>
       </p>
